@@ -12,4 +12,5 @@ export class TagController {
     async findAll(): Promise<TagEntity[]> {
         return await this.tagService.findAll();
     }
+
 }
