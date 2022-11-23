@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
 
 const config: PostgresConnectionOptions = {
