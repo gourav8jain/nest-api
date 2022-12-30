@@ -1,3 +1,4 @@
+import { TagResolver } from './tag.resolver';
 /* eslint-disable prettier/prettier */
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
@@ -8,7 +9,7 @@ import { TagService } from "./tag.service";
 @Module({
     imports:[TypeOrmModule.forFeature([TagEntity])],
     controllers:[TagController],
-    providers:[TagService]
+    providers:[TagService,TagResolver]
 })
 
 export class TagModule{

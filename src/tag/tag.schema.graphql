@@ -1,0 +1,8 @@
+type tag {
+  id: ID!
+  name: String
+}
+
+type Query {
+  tags: [tag]
+}
